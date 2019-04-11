@@ -1,0 +1,114 @@
+/*general style*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+header {
+    font-size: 30px;
+    color: #8d9db6;
+}
+
+code {
+    display: block;
+    line-height: 2;
+    background-color: #f7f7f7;
+    font-size: 12px;
+    max-width: 900px;
+    color: grey;
+    text-align: left;
+    padding: 25px;
+}
+
+
+
+.container {
+    display: flex;
+    max-width: auto;
+    margin: 0 auto;
+}
+
+.menu {
+    width: 300px;
+
+
+}
+
+.menu header {
+    background: #667292;
+    border: solid black 0.5px;
+    padding: 11px;
+    margin: 0px;
+    color: #f1e3dd;
+}
+
+.article {
+    max-width: 1000px;
+    margin-left: 45px;
+}
+
+.menu ul li {
+    background: #667292;
+    text-decoration: none;
+    list-style: none;
+    border: solid black 0.5px;
+    padding: 11px;
+    margin: 0px;
+}
+
+.menu {
+    background: #667292;
+
+}
+
+section {
+    margin: 15px;
+}
+
+.menu a {
+    /* take off the decorations */
+    text-decoration: none;
+    color: #f1e3dd;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.submenu {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+}
+
+/* This query was necessary for changing the size of the elements on mobile cellphone*/
+@media only screen and (max-width: 800px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu {
+        width: 100%;
+        display: flex;
+        position: relative;
+        max-height: 250px;
+        height: 250px;
+    }
+
+    .menu header {
+        text-align: center;
+    }
+
+    main {
+        margin: 20px;
+    }
+}
