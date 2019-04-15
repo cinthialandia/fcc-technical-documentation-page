@@ -10,6 +10,7 @@ header {
     color: #8d9db6;
 }
 
+/*style code*/
 code {
     display: block;
     line-height: 2;
@@ -21,18 +22,17 @@ code {
     padding: 25px;
 }
 
-
-
+/*specify style*/
+/*flexbox container max-width to maintain the proportion of the screen*/
 .container {
     display: flex;
     max-width: auto;
     margin: 0 auto;
 }
 
+/*the size that the menu will take on the whole screen*/
 .menu {
     width: 300px;
-
-
 }
 
 .menu header {
@@ -43,6 +43,7 @@ code {
     color: #f1e3dd;
 }
 
+/*the size that the information part will take and that it does not deform itself, in very large screens*/
 .article {
     max-width: 1000px;
     margin-left: 45px;
@@ -62,16 +63,18 @@ code {
 
 }
 
+/*space between menu and article*/
 section {
     margin: 15px;
 }
 
 .menu a {
-    /* take off the decorations */
+    /* remove style */
     text-decoration: none;
     color: #f1e3dd;
 }
 
+/*Menu flexbox using sticky to keep the same on the screen, while the articles are traversed*/
 .menu {
     display: flex;
     flex-direction: column;
@@ -81,6 +84,7 @@ section {
     top: 0;
 }
 
+/*flebox is created to modify the direction off the li and scroll menu*/
 .submenu {
     display: flex;
     flex-direction: column;
@@ -91,11 +95,14 @@ section {
 
 /* This query was necessary for changing the size of the elements on mobile cellphone*/
 @media only screen and (max-width: 800px) {
+
+    /*this flexbox is used in the menu is 100% on the screen and the entire article is below it*/
     .container {
         display: flex;
         flex-wrap: wrap;
     }
 
+    /* put the menu in an exact size which is not deformed*/
     .menu {
         width: 100%;
         display: flex;
